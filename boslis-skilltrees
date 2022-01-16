@@ -1,0 +1,1415 @@
+local Finity = loadstring(game:HttpGet("https://pastebin.com/raw/y4eeFHp0"))()
+
+local FinityWindow = Finity.new(true)
+FinityWindow.ChangeToggleKey(Enum.KeyCode.RightControl)
+
+local Skill = FinityWindow:Category("boslis skill tree")
+
+local ST = Skill:Sector("Stands")
+
+local FT = Skill:Sector ("Fighting Styles")
+
+local CT = Skill:Sector ("Character")
+
+
+-- Get Whitesnake Skill Tree
+ST:Cheat("Button", "Get Whitesnake Skill Tree", function()
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Acidic Spew",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+    
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Poisoning I",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+    
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Poisoning II",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+    
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Poisoning III",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+    
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Burst Fire",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+    
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Pilot",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+    
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Stand Speed I",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+    
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Stand Speed II",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+    
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Stand Speed III",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+    
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Spirit Disc",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+    
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Memory Disc",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+    
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Disc Upgrade I",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+    
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Disc Upgrade II",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+    
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Disc Upgrade III",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+    
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Disc Upgrade IV",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+    
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Disc Upgrade V",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+end)
+
+
+-- Get C-Moon Skill Tree
+ST:Cheat("Button", "Get C-Moon Skill Tree", function()
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Gravitational Shift",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Gravitational Negation",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Gravity Upgrade I",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Gravity Upgrade II",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Uppercut to The Moon",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Gravity Upgrade III",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Gravity Upgrade IV",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Gravity Upgrade V",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Pilot",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Stand Speed I",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Stand Speed II",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Stand Speed III",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Stand Speed IV",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Time Stop Resistance",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Stand Range I",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Stand Range II",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Surface Inversion Punch",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+end)
+
+
+-- Get Star Platinum Skill Tree
+ST:Cheat("Button", "Get Star Platinum Skill Tree", function()
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Inhale",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Destructive Power I",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Star Finger",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Destructive Power II",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Destructive Power III",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Stand Jump",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Stand Jump Upgrade I",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Stand Jump Upgrade II",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Destructive Power IV",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Ora Kicks",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Destructive Power V",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Rage Mode",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Anger Issues I",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Anger Issues II",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Anger Issues III",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Constant Rage I",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Constant Rage II",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Constant Rage III",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Time Stop Resistance",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Time Skip",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "The World",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Time Stop Mastery I",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Time Stop Mastery II",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+end)
+
+
+-- Get Made In Heaven Skill Tree
+ST:Cheat("Button", "Get MIH Skill Tree", function()
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Double Accel",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Double Accel Upgrade I",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Double Accel Upgrade I",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Speed Slice",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Double Accel Upgrade II",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Double Accel Upgrade III",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Heaven's Judgement",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Triple Accel",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Double Accel Upgrade IV",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Double Accel Upgrade V",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Time Acceleration",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Infinite Speed",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Throw Knife",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Throw Knife Upgrade I",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Triple the Knives",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Throw Knife Upgrade II",
+            ["SkillTreeType"] = "Stand"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+end)
+
+
+-- Get Pluck Skill Tree
+FT:Cheat("Button", "Get Pluck Skill Tree", function()
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Pierce Strike",
+            ["SkillTreeType"] = "Spec"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Pierce Strike Upgrade",
+            ["SkillTreeType"] = "Spec"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Pierce Strike Upgrade 2",
+            ["SkillTreeType"] = "Spec"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Triple Pierce Strike",
+            ["SkillTreeType"] = "Spec"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Crescent Slash",
+            ["SkillTreeType"] = "Spec"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Crescent Slash Upgrade",
+            ["SkillTreeType"] = "Spec"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Crescent Slash Upgrade 2",
+            ["SkillTreeType"] = "Spec"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Crescent Slash Upgrade 3",
+            ["SkillTreeType"] = "Spec"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Thrust",
+            ["SkillTreeType"] = "Spec"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Thrust Upgrade 1",
+            ["SkillTreeType"] = "Spec"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Thrust Upgrade 2",
+            ["SkillTreeType"] = "Spec"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Thrust Upgrade 3",
+            ["SkillTreeType"] = "Spec"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Aerial Ace",
+            ["SkillTreeType"] = "Spec"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+end)
+
+
+-- Get Boxing Skill Tree
+FT:Cheat("Button", "Get Boxing Skill Tree", function()
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Tough Skin I",
+            ["SkillTreeType"] = "Spec"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Tough Skin II",
+            ["SkillTreeType"] = "Spec"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Tough Skin III",
+            ["SkillTreeType"] = "Spec"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Meat Shield I",
+            ["SkillTreeType"] = "Spec"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Fist Barrage",
+            ["SkillTreeType"] = "Spec"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Meat Shield II",
+            ["SkillTreeType"] = "Spec"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Jaw Breaker",
+            ["SkillTreeType"] = "Spec"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Muscle Memory",
+            ["SkillTreeType"] = "Spec"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Dash Mastery I",
+            ["SkillTreeType"] = "Spec"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Eye Gouge",
+            ["SkillTreeType"] = "Spec"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Mastered Eye Gouge",
+            ["SkillTreeType"] = "Spec"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Mastered Technique",
+            ["SkillTreeType"] = "Spec"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+end)
+
+
+-- Get Character Skill Tree
+CT:Cheat("Button", "Get Character Skill Tree", function()
+    local args = {
+        [1] = "LearnSkill", 
+        [2] = {
+            ["Skill"] = "Agility I",
+            ["SkillTreeType"] = "Character"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+    
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Agility II",
+            ["SkillTreeType"] = "Character"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+    
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Agility III",
+            ["SkillTreeType"] = "Character"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Agility IV",
+            ["SkillTreeType"] = "Character"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Agility V",
+            ["SkillTreeType"] = "Character"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+    
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Worthiness I",
+            ["SkillTreeType"] = "Character"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+    
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Worthiness II",
+            ["SkillTreeType"] = "Character"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Vitality I",
+            ["SkillTreeType"] = "Character"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Vitality II",
+            ["SkillTreeType"] = "Character"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Vitality III",
+            ["SkillTreeType"] = "Character"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Vitality IV",
+            ["SkillTreeType"] = "Character"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Vitality V",
+            ["SkillTreeType"] = "Character"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Vitality VI",
+            ["SkillTreeType"] = "Character"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Vitality VII",
+            ["SkillTreeType"] = "Character"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Vitality VIII",
+            ["SkillTreeType"] = "Character"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Vitality IX",
+            ["SkillTreeType"] = "Character"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Vitality X",
+            ["SkillTreeType"] = "Character"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+    
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Sturdiness I",
+            ["SkillTreeType"] = "Character"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Sturdiness II",
+            ["SkillTreeType"] = "Character"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Health Regen I",
+            ["SkillTreeType"] = "Character"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Health Regen II",
+            ["SkillTreeType"] = "Character"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Health Regen III",
+            ["SkillTreeType"] = "Character"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+end)
+
+
+-- Get Character Skill Tree 2
+CT:Cheat("Button", "Get Character Skill Tree 2", function()
+    local args = {
+        [1] = "LearnSkill", 
+        [2] = {
+            ["Skill"] = "Agility I",
+            ["SkillTreeType"] = "Character"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+    
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Agility II",
+            ["SkillTreeType"] = "Character"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+    
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Agility III",
+            ["SkillTreeType"] = "Character"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Agility IV",
+            ["SkillTreeType"] = "Character"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Agility V",
+            ["SkillTreeType"] = "Character"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+    
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Worthiness I",
+            ["SkillTreeType"] = "Character"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+    
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Worthiness II",
+            ["SkillTreeType"] = "Character"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Vitality I",
+            ["SkillTreeType"] = "Character"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Vitality II",
+            ["SkillTreeType"] = "Character"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Vitality III",
+            ["SkillTreeType"] = "Character"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Vitality IV",
+            ["SkillTreeType"] = "Character"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Vitality V",
+            ["SkillTreeType"] = "Character"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Vitality VI",
+            ["SkillTreeType"] = "Character"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Vitality VII",
+            ["SkillTreeType"] = "Character"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Vitality VIII",
+            ["SkillTreeType"] = "Character"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Vitality IX",
+            ["SkillTreeType"] = "Character"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+
+    local args = {
+        [1] = "LearnSkill",
+        [2] = {
+            ["Skill"] = "Vitality X",
+            ["SkillTreeType"] = "Character"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+end)
+
+
+-- Anti Vampire Burn
+CT:Cheat("Button", "Anti Vampire Burn", function()
+    while true do
+        Workspace.Weather.Value = "null"
+        wait(1)
+      end
+    end)
