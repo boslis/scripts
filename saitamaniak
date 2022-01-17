@@ -10,24 +10,28 @@ local Sait = Saitamania:Sector("cool!")
 
 local Ezpi = Saitamania:Sector("belong 2 ezpi ok!!")
 
+local autoskill = false
+
 -- Auto Skill
 Sait:Cheat(
     "Checkbox",
-    "Auto Skill",
+    "Noclip",
     function(State)
-    print("Auto Skill:", State)
-game:GetService('VirtualInputManager'):SendKeyEvent(true,'Q',false,uwu)
-wait(1)
-game:GetService('VirtualInputManager'):SendKeyEvent(true,'E',false,uwu)
-wait(1)
-game:GetService('VirtualInputManager'):SendKeyEvent(true,'R',false,uwu)
-wait(1)
-game:GetService('VirtualInputManager'):SendKeyEvent(true,'F',false,uwu)
-wait(1)
-game:GetService('VirtualInputManager'):SendKeyEvent(true,'G',false,uwu)
-end)
-
-
+        autoskill = not autoskill
+        while autoskill do
+            game:GetService('VirtualInputManager'):SendKeyEvent(true,'Q',false,uwu)
+            wait(1)
+            game:GetService('VirtualInputManager'):SendKeyEvent(true,'E',false,uwu)
+            wait(1)
+            game:GetService('VirtualInputManager'):SendKeyEvent(true,'R',false,uwu)
+            wait(1)
+            game:GetService('VirtualInputManager'):SendKeyEvent(true,'F',false,uwu)
+            wait(1)
+            game:GetService('VirtualInputManager'):SendKeyEvent(true,'G',false,uwu)
+            wait()
+        end
+    end)
+    
 -- Kill Aura
 Sait:Cheat("Button", "Kill Aura", function()
 game:GetService('Players').PlayerAdded:connect(function(player)
