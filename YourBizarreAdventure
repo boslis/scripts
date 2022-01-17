@@ -1,4 +1,4 @@
--- hey what the fuck is this 2k lines script lmao 
+-- brav 2k line srip
 local Finity = loadstring(game:HttpGet("https://pastebin.com/raw/y4eeFHp0"))()
 
 local FinityWindow = Finity.new(true)
