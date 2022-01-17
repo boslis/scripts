@@ -1,0 +1,81 @@
+local Finity = loadstring(game:HttpGet("https://pastebin.com/raw/y4eeFHp0"))()
+
+-- saitamaniak
+
+local FinityWindow = Finity.new(true)
+FinityWindow.ChangeToggleKey(Enum.KeyCode.RightControl)
+
+local Saitamania = FinityWindow:Category("saitamanyak")
+
+local Sait = Saitamania:Sector("cool!")
+
+local Cool = FinityWindow:Category("boslis gui")
+
+local destroy = Cool:Sector("support boslis ok!!")
+
+local Ezpi = Saitamania:Sector("belong 2 ezpi ok!!")
+
+local autoskill = false
+
+-- Destroy GUI
+destroy:Cheat("Button", "Destroy GUI", function()
+    game.CoreGui:FindFirstChild("FinityUI"):Destroy()
+end)
+
+-- Auto Skill
+Sait:Cheat(
+    "Checkbox",
+    "Auto Skill",
+    function(State)
+        autoskill = not autoskill
+        while autoskill do
+            game:GetService('VirtualInputManager'):SendKeyEvent(true,'Q',false,uwu)
+            wait(1)
+            game:GetService('VirtualInputManager'):SendKeyEvent(true,'E',false,uwu)
+            wait(1)
+            game:GetService('VirtualInputManager'):SendKeyEvent(true,'R',false,uwu)
+            wait(1)
+            game:GetService('VirtualInputManager'):SendKeyEvent(true,'F',false,uwu)
+            wait(1)
+            game:GetService('VirtualInputManager'):SendKeyEvent(true,'G',false,uwu)
+            wait()
+        end
+    end)
+    
+-- Kill Aura
+Sait:Cheat("Button", "Kill Aura", function()
+game:GetService('Players').PlayerAdded:connect(function(player)
+player.CharacterAdded:connect(function(character)
+character:WaitForChild("Humanoid").Died:connect(function()
+while true do
+wait(5)
+local killaura = true
+local player = game:GetService("Players").LocalPlayer
+player:GetMouse().KeyDown:Connect(function(key)
+end)
+while wait() do
+if killaura then
+for i,v in pairs(workspace.NPCS:GetChildren()) do
+if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0
+and (player.Character.HumanoidRootPart.Position - v.HumanoidRootPart.Position).Magnitude < 15 then
+game.ReplicatedStorage.SKILL_EVENT:FireServer("NonePunch")
+game.ReplicatedStorage.HITBOX_EVENT:FireServer("NonePunch",v.HumanoidRootPart.Position,v,true)
+end
+end
+end
+end
+end
+end)
+end)
+end)
+end)
+
+-- Invisible
+Sait:Cheat("Button", "Invisible", function()
+    game.Players.LocalPlayer.Character.LowerTorso:Destroy()
+end)
+
+-- Background AutoClicker
+Ezpi:Cheat("Button", "Background Autoclicker", function()
+    loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/JustEzpi/ROBLOX-Scripts/main/ROBLOX_AutoClicker"))()
+end)
