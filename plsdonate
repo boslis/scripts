@@ -2,12 +2,13 @@
 -- Credits to tzechco on v3rmillion it's his script.
 
 --\\ Auto Chat
+_G.Autochat = true
 local ChatMessage = {
    ["Message1"] = "Hey! Its my birthday, i hope i can get new avatar, donate with any amount, thankyou <3", -- change it to whatever do u want
    ["Message2"] = "I Really Appreciate that if you donate me!",
    ["Message3"] = "Thankyou!"
 }
-while _G.Active and task.wait() do
+while _G.Autochat and task.wait() do
 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(ChatMessage.Message1, "All")
 task.wait(2)
 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(ChatMessage.Message2, "All")
