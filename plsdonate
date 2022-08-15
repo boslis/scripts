@@ -1,5 +1,23 @@
 --// THE SCRIPT IS NOT MINE I PUT IT IN HERE JUST IN CASE I WANT TO ADD SOMETHING 
 -- Credits to tzechco on v3rmillion it's his script.
+
+--\\ Auto Chat
+local ChatMessage = {
+   ["Message1"] = "Hey! Its my birthday, i hope i can get new avatar, donate with any amount, thankyou <3", -- change it to whatever do u want
+   ["Message2"] = "I Really Appreciate that if you donate me!",
+   ["Message3"] = "Thankyou!"
+}
+while _G.Active and task.wait() do
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(ChatMessage.Message1, "All")
+task.wait(2)
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(ChatMessage.Message2, "All")
+task.wait(5)
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(ChatMessage.Message3, "All")
+task.wait(20) -- delay
+end
+-\\
+
+
 repeat wait() until game:IsLoaded()
 if game.PlaceId ~= 8737602449 then return end
 for i,v in pairs(getconnections(game:GetService("Players").LocalPlayer.Idled)) do
