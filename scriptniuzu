@@ -77,6 +77,18 @@ function get_weapons()
     return weapons
 end
 
+function get_runes()
+    local runes = {}
+    
+    for i, v in player.leaderstats.Inventory.Items:GetChildren() do
+        if not v.Name:match("Rune") then continue end
+        if v:GetAttribute("Amount") == 0 then continue end
+        table.insert(runes, v.Name)
+    end
+    table.sort(runes)
+    return runes
+end
+
 function replay_dungeon()
     local ticket = player.leaderstats.Inventory.Items:FindFirstChild("Ticket")
     local ticket_amount = ticket and ticket:GetAttribute("Amount")
@@ -140,7 +152,7 @@ function auto_farm()
 
         if get_distance(mob:GetPivot().p) > 10 then
             teleport(mob:GetPivot() * CFrame.new(0, 2, 0.1))
-            task.wait(0.3)
+            task.wait(0.4)
         end
 
         data_remote_event:FireServer({{Event = "PunchAttack", Enemy = mob.Name}, "\5"})
@@ -188,16 +200,20 @@ main_folder:AddToggle({text = "Auto Farm", state = config.auto_farm, callback = 
     task.spawn(auto_farm)
 end})
 
-main_folder:AddSlider({
-    text = "Farm Speed (secs)",
-    min = 0,
-    max = 2,
-    value = config.auto_farm_speed or 0.2,
-    callback = function(v)
-        config.auto_farm_speed = v
-        save()
-    end
-})
+main_folder:AddToggle({text = "Use Rune", state = config.use_rune, callback = function(v)
+    config.use_rune = v
+    save()
+end})
+
+main_folder:AddList({text = "Select Rune", value = config.selected_rune, values = get_runes(), callback = function(v)
+    config.selected_rune = v
+    save()
+end})
+
+main_folder:AddSlider({text = "Kill Cooldown", value = config.speed or .5, min = 0, max = 1, float = .1, callback = function(v)
+    config.speed = v
+    save()
+end})
 
 misc_folder:AddToggle({text = "Auto Upgrade Weapon", state = config.auto_upgrade_weapon, callback = function(v)
     config.auto_upgrade_weapon = v
