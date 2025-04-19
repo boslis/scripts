@@ -1,3 +1,5 @@
+repeat wait() until game:IsLoaded()
+
 getgenv().config = {}
 
 local players = game:GetService("Players")
@@ -15,6 +17,15 @@ local name = ("%s - %s Arise Dungeon.lua"):format(player.UserId, game.GameId)
 local path = ("%s/%s"):format(folder, name)
 
 repeat task.wait() until player:GetAttribute("Loaded") and workspace.__Extra:FindFirstChild("__Spawns")
+
+-- Anti AFK
+local player = game.Players.LocalPlayer
+local virtual_user = game:GetService("VirtualUser")
+
+player.Idled:Connect(function()
+    virtual_user:CaptureController()
+    virtual_user:ClickButton2(Vector2.new())
+end)
 
 function save()
     if not isfolder(folder) then makefolder(folder) end
