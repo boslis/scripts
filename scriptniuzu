@@ -7,6 +7,7 @@ local teleport_service = game:GetService("TeleportService")
 local player = players.LocalPlayer
 local data_remote_event = replicated_storage.BridgeNet2.dataRemoteEvent
 
+
 local ctrl_char = {"\a", "\b", "\f", "\n", "\r", "\t", "\v", "\z", "\0", "\1", "\2", "\3", "\4", "\5", "\6", "\7", "\8", "\9"}
 
 local folder = "Uzu"
@@ -77,18 +78,6 @@ function get_weapons()
     return weapons
 end
 
-function get_runes()
-    local runes = {}
-    
-    for i, v in player.leaderstats.Inventory.Items:GetChildren() do
-        if not v.Name:match("Rune") then continue end
-        if v:GetAttribute("Amount") == 0 then continue end
-        table.insert(runes, v.Name)
-    end
-    table.sort(runes)
-    return runes
-end
-
 function replay_dungeon()
     local ticket = player.leaderstats.Inventory.Items:FindFirstChild("Ticket")
     local ticket_amount = ticket and ticket:GetAttribute("Amount")
@@ -115,7 +104,7 @@ function auto_dungeon()
 
         if get_distance(mob:GetPivot().p) > 10 then
             teleport(mob:GetPivot() * CFrame.new(0, 2, 0.1))
-            task.wait(0.4)
+            task.wait(0.3)
         end
 
         data_remote_event:FireServer({{Event = "PunchAttack", Enemy = mob.Name}, "\4"})
@@ -143,19 +132,46 @@ function auto_upgrade_weapon()
     end
 end
 
+function get_runes()
+    local runes = {}
+    
+    for i, v in player.leaderstats.Inventory.Items:GetChildren() do
+        if not v.Name:match("Rune") then continue end
+        if v:GetAttribute("Amount") == 0 then continue end
+        table.insert(runes, v.Name)
+    end
+    table.sort(runes)
+    return runes
+end
+
+function get_brute()
+    local dist = math.huge
+    local target = nil
+
+    for i, v in workspace.__Main.__Enemies.Server:GetDescendants() do
+        local mag = v:IsA("Part") and v:GetAttribute("Scale") == 2 and not v:GetAttribute("Dead") and get_distance(v:GetPivot().p)
+
+        if mag and mag < dist then
+            dist = mag
+            target = v
+        end
+    end
+    return target
+end
+
 function auto_farm()
     while task.wait() and config.auto_farm do
-        local mob = get_nearest_mob()
+        local mob = get_brute()
         if not mob then continue end
 
         float()
 
         if get_distance(mob:GetPivot().p) > 10 then
             teleport(mob:GetPivot() * CFrame.new(0, 2, 0.1))
-            task.wait(0.4)
+            task.wait(0.3)
         end
 
-        data_remote_event:FireServer({{Event = "PunchAttack", Enemy = mob.Name}, "\5"})
+        data_remote_event:FireServer({{Event = "PunchAttack", Enemy = mob.Name}, "\4"})
         task.wait(config.auto_farm_speed or 0.2)
     end
 end
@@ -174,6 +190,7 @@ function auto_rejoin()
         end
     end)
 end
+
 
 task.wait(.1)
 load()
@@ -210,10 +227,17 @@ main_folder:AddList({text = "Select Rune", value = config.selected_rune, values 
     save()
 end})
 
-main_folder:AddSlider({text = "Kill Cooldown", value = config.speed or .5, min = 0, max = 1, float = .1, callback = function(v)
-    config.speed = v
-    save()
-end})
+main_folder:AddSlider({
+    text = "Farm Speed (secs)",
+    min = 0,
+    max = 2,
+    value = config.auto_farm_speed or 0.2,
+    float = 0.1,
+    callback = function(v)
+        config.auto_farm_speed = v
+        save()
+    end
+})
 
 misc_folder:AddToggle({text = "Auto Upgrade Weapon", state = config.auto_upgrade_weapon, callback = function(v)
     config.auto_upgrade_weapon = v
