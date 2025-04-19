@@ -98,6 +98,12 @@ function replay_dungeon()
         for _, v in ctrl_char do
             data_remote_event:FireServer({{Type = "Gems", Event = "DungeonAction", Action = "BuyTicket"}, v})
             data_remote_event:FireServer({{Event = "DungeonAction", Action = "Create"}, v})
+
+ if config.use_rune and config.selected_rune then
+                data_remote_event:FireServer({{Dungeon = player.UserId, Action = "AddItems", Slot = 1, Event = "DungeonAction", Item = config.selected_rune}, v})
+                task.wait(.1)
+            end
+
             data_remote_event:FireServer({{Dungeon = player.UserId, Event = "DungeonAction", Action = "Start"}, v})
         end
         task.wait(60)
